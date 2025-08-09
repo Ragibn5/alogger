@@ -17,6 +17,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
       A customizable file logger handling file creation, writing, log sequentiality and everything else for you.
     - [CompositeLogger](alogger/src/main/java/com/ragibn5/alogger/sources/CompositeLogger.kt)
       A logger implementation that takes other loggers as params and delegates logging to all of them.
-      The default implementation (without you explicitly adding loggers) only uses a (default implementation of) `ConsoleLogger`.
-      You may also create your own logger implementations (for example a network logger) using [Logger](alogger/src/main/java/com/ragibn5/alogger/sources/Logger.kt)
-      interface, or extending the built-in logger implementations to add any extra feature on top.
+
+  You may also create your own logger implementations (for example a network logger) using [Logger](alogger/src/main/java/com/ragibn5/alogger/sources/Logger.kt)
+  interface, or extending the built-in logger implementations to add any extra feature on top.
+
+  Please see the [README](README.md) file for more details.

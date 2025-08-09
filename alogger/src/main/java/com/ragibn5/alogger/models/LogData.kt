@@ -16,9 +16,9 @@ import com.ragibn5.alogger.constants.LogLevel
  */
 data class LogData(
     val tag: String,
-    val stamp: Long,
     val type: LogLevel,
     val message: String,
+    val stamp: Long = System.currentTimeMillis(),
     val extras: Map<String, Any> = emptyMap(),
     val throwable: Throwable? = null
 )
